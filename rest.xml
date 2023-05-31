@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name = "Rest Suite">
+	
+	<test name = "HTTP Request">
+		
+		<classes>
+			
+			<class name = "http_Requests.GETRequest"></class>
+			<class name = "http_Requests.POSTRequest"></class>
+			<class name = "http_Requests.PUTRequest"></class>
+			<class name = "http_Requests.DELETERequest"></class>
+			
+		</classes>
+		
+	</test>
+	
+	<test name ="Diff Ways to create json body">
+		
+		<classes>
+			
+			<class name="diffwaystocreatebodyinrequests.Creating_Post_Req_With_Hashmap"></class>
+			<class name="diffwaystocreatebodyinrequests.Creating_Post_Req_With_JSON"></class>
+			<class name="diffwaystocreatebodyinrequests.Creating_Post_Req_With_POJO"></class>
+			<class name="diffwaystocreatebodyinrequests.Creating_Post_Req_With_External_Json_File"></class>
+			
+		</classes>
+		
+	</test>
+	
+	<test name="Validations">
+		
+		<classes>
+			
+			<class name="validations.Query_And_Path_Parameters"></class>
+			<class name="validations.Cookies_Validations"></class>
+			<class name="validations.Headers_Validations"></class>
+			<class name="validations.Logging"></class>
+			
+		</classes>
+		
+	</test>
+	
+	
+</suite>
